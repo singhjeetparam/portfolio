@@ -3,12 +3,12 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, } from '@heroicons/react/24/outline'
 import {BoltIcon} from '@heroicons/react/24/solid'
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 
@@ -20,16 +20,16 @@ export default function Header() {
     <header >
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8 absolute inset-x-0 top-0 z-50" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">PARAMJEET SINGH</span>
             <BoltIcon className="h-8 w-8 text-gray-100" />
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm  leading-6 text-gray-100">
+            <Link key={item.name} href={item.href} className="text-sm  leading-6 text-gray-100">
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex lg:hidden">
@@ -67,7 +67,8 @@ export default function Header() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-700"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 "
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </a>

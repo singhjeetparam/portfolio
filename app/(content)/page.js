@@ -1,5 +1,6 @@
+import Contact from "@/components/common/contact/contact";
+import Experience from "@/components/common/experience/experience";
 import Hero from "@/components/common/hero/hero";
-import CTA from "@/components/common/projects/projects";
 import Skills from "@/components/common/skills/skills";
 
 export default function Home(){
@@ -7,7 +8,8 @@ export default function Home(){
         <>
         <Hero/>
         <Skills />
-        <CTA />
+        <Experience />
+        <Contact />
         </>
     )
 
