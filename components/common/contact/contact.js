@@ -38,7 +38,7 @@ export default function Contact() {
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8 ">
           <div className="relative isolate overflow-hidden bg-gray-900/70 px-6 py-24 text-center shadow-2xl rounded-3xl sm:px-16 mx-10">
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Let's Connect !
+            Let&apos;s Connect !
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
             Get in Touch to Start Building Something Amazing Together
